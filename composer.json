@@ -1,0 +1,14 @@
+{
+    "name": "user/cms",
+    "require": {
+        "phpmailer/phpmailer": "^6.8",
+        "pusher/pusher-php-server": "^7.2",
+        "vlucas/phpdotenv": "^5.5"
+    },
+    "authors": [
+        {
+            "name": "faisalrafi",
+            "email": "faisalrafi420@gmail.com"
+        }
+    ]
+}
