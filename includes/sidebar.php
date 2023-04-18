@@ -26,7 +26,7 @@
     <!-- Blog Search Well -->
     <div class="well">
         <h3 class="text-center">Blog Search</h3>
-        <form action="search.php" method="post">
+        <form action="/cms/search.php" method="post">
         <div class="input-group">
             <input name="search" type="text" class="form-control">
             <span class="input-group-btn">

@@ -27,7 +27,7 @@ if (isset($_POST['create_post']))
 
     $the_post_id = mysqli_insert_id($conn);
 
-    echo "<h4 class='bg-success'>Post Created. <a href='../post.php?p_id={$the_post_id}'>View Post </a>or<a href='posts.php'> Edit More Posts</a></h4>";
+    echo "<h4 class='bg-success'>Post Created. <a href='/cms/post.php?p_id={$the_post_id}'>View Post </a>or<a href='posts.php'> Edit More Posts</a></h4>";
 
 }
 

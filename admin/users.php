@@ -43,10 +43,6 @@ if (!is_admin($_SESSION['username'])){
                             include "includes/edit_user.php";
                             break;
 
-                        case '20';
-                            echo "Nice 20";
-                            break;
-
                         default:
                             include "includes/view_all_users.php";
                             break;
