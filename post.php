@@ -6,6 +6,12 @@
 
 <?php include "includes/navigation.php"; ?>
 
+<?php
+
+
+
+?>
+
 <!-- Page Content -->
 <div class="container">
 
@@ -52,15 +58,31 @@
                 $post_image = $row['post_image'];
                 $post_content = $row['post_content'];
 
+                $base_url = 'http://127.0.0.1';
+                $current_url = $base_url . $_SERVER['REQUEST_URI'];
+
                 ?>
                 <h1 class="text-center page-header">
                     Posts
                 </h1>
+                <h3 class="text-left"><strong>Share The Post On</strong></h3>
+                <div class="col-md-12">
+                    <a class="btn fa-icons" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $current_url; ?>"><i class="bi bi-facebook">Facebook</i></a>
+
+                    <a class="btn fa-icons" target="_blank" href="https://twitter.com/intent/tweet?url=<?php echo $current_url; ?>"><i class="bi bi-twitter">Twitter</i></a>
+
+                    <a class="btn fa-icons" target="_blank" href="https://wa.me/?text=<?php echo $current_url; ?>"><i class="bi bi-whatsapp">WhatsApp</i></a>
+
+                    <a class="btn fa-icons" target="_blank" href="mailto:?subject=Check out this post&amp;body=<?php echo $current_url; ?>"><i class="fa-lg bi bi-envelope-at-fill">Email</i></a>
+                </div>
+                <hr/>
 
                 <!-- First Blog Post -->
-                <h2>
-                    <a href="#"><?php echo $post_title; ?></a>
-                </h2>
+                <div class="col-md-12">
+                    <h2 class="text-center">
+                        <a href="#"><?php echo $post_title; ?></a>
+                    </h2>
+                </div>
                 <p class="lead">
                     by <a href="/cms/index.php"><?php echo $post_author; ?></a>
                 </p>
